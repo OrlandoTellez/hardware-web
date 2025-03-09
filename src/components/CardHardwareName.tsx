@@ -4,12 +4,13 @@ import styles from "@/components/CardHardwareName.module.css"
 interface Props {
   name: string
   icon: string
+  onClick: () => void 
 }
 
-export const CardHardwareName = ({ name, icon }: Props) => {
+export const CardHardwareName = ({ name, icon, onClick }: Props) => {
   return (
     <>
-      <div className={styles.card}>
+      <div className={styles.card} onClick={onClick}>
         <picture>
           <img src={icon} alt={name} />
         </picture>

@@ -12,7 +12,6 @@
 
 .card picture {
     position: relative;
-    height: 450px;
     overflow: hidden; 
 }
 
@@ -52,4 +51,12 @@
     padding: 10px 20px;
 }
     
+@media only screen and (min-width: 1024px){
+    .card{
+        width: 700px;
+    }
+    .card picture {
+        height: 400px;
+    }
+}
 
