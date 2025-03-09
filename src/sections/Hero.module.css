@@ -1,37 +1,46 @@
-.hero{
-    padding: 20px;
-    width: 100%;  
-  }
-  
-  .text{
-    width: 100%;
-    display: grid;
-    place-items: center;
-    gap: 20px;
-    && h1{
-      font-size: 3rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    && div{
-      color: #0080ff;
-      background: white;
-      padding: 4px 12px;
-      border-radius: 10px;
-    }
-  }
-  
-  .sub_text{
-    max-width: 70ch;
-    font-size: 1.4rem;  
-    color: #606976;
+.hero {
+  padding: 20px;
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  && h1 {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .buttons{
-    display: flex;
-    gap: 10px;
+  && div {
+    color: #0080ff;
+    background: white;
+    padding: 4px 12px;
+    border-radius: 10px;
   }
+}
+
+.sub_text {
+  max-width: 70ch;
+  font-size: 1.4rem;
+  color: #606976;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 700px){
+  .buttons{
+    flex-direction: row;
+    justify-content: center;
+  }
+}

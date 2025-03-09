@@ -6,4 +6,5 @@
     padding: 8px 18px;
     border-radius: 5px;
     gap: 10px;
+    justify-content: center;
 }
