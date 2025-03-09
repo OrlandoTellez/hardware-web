@@ -2,6 +2,7 @@ import React from "react";
 import { Label } from "@/components/Label";
 import styles from "@/sections/FundamentosTecnicos.module.css";
 import { CardFundamentos } from "@/components/CardFundamentos";
+import { Button } from "@/components/Button";
 
 export const FundamentosTecnicos = () => {
     const fundamentosDetails = [
@@ -62,6 +63,10 @@ export const FundamentosTecnicos = () => {
                 ))
             }
         </section>
+
+        <div className={styles.button}>
+          <Button text="Ver todos los principios" url="/" />
+        </div>
       </section>
     </>
   );

@@ -26,3 +26,9 @@
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.button{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
