@@ -1,7 +1,13 @@
 .header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    position: fixed;
+    background: white;
+    background-color: rgb(255 255 255 / 70%);
+    backdrop-filter: blur(10px);
+    z-index: 20;
 }
 
 .nav{
