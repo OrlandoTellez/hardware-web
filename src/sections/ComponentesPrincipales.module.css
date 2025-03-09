@@ -1,0 +1,28 @@
+.section{
+    width: 100%;
+    padding: 20px;
+    background: #f9fafb;
+}
+
+.article{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+
+    && h2{
+        text-align: center;
+    }
+
+    && p{
+        text-align: center;
+    }
+}
+
+.cards{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}

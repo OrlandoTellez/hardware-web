@@ -6,10 +6,12 @@ import { SecondaryButton } from "@/components/SecondaryButton";
 export const Hero = () => {
   return (
     <>
-      <section className={styles.hero}>
-        <article className={styles.text}>
+      <section className={styles.section}>
+        <article className={styles.article}>
           <div>
-            <p>Bienvenido a HardwareClass</p>
+            <p>
+              <span>Bienvenido a HardwareClass</span>
+            </p>
           </div>
           <h1>
             Descubre el <span> Universo del Hardware</span>
