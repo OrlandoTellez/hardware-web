@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav{
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.ul{
+    display: flex;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 1024px){
+    .nav{
+        display: grid;
+    }
+
+    .bars{
+        display: none;
+    }
+}
+

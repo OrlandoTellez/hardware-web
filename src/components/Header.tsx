@@ -1,16 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
-import "@/components/Header.css"
+import bars from "@/icons/bars.svg"
+import styles from "@/components/Header.module.css"
 
 export const Header = () => {
   return (
     <>
-        <header>
+        <header className={styles.header}>
             <div>
                 <h1>Hardware<span>Class</span></h1>
             </div>
-            <nav>
-                <ul>
+
+            <div className={styles.bars}>
+                <img src={bars.src} alt="bars" />
+            </div>
+
+            <nav className={styles.nav}>
+                <ul className={styles.ul}>
                     <li><Link href="/">Inicio</Link></li>
                     <li><Link href="/componentes">Componentes</Link></li>
                     <li><Link href="/principios">Principios</Link></li>
