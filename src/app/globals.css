@@ -1,5 +1,5 @@
 :root {
-  --background: #f8fbff;
+  --background: #f0f6ff;
   --foreground: #171717;
 }
 
@@ -45,3 +45,6 @@ li{
   list-style: none;
 }
 
+span{
+  color: #0080ff;
+}
