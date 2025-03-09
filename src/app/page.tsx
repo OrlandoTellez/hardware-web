@@ -1,15 +1,11 @@
-"use client";
+"use client"
 
-import styles from "./page.module.css";
-import { Header } from "@/components/Header";
+import { Hero } from "@/sections/Hero"
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <div className={styles.container}>
-        <h1>Se empieza el proyecto</h1>
-      </div>
+    <>      
+      <Hero />
     </>
-  );
+  )
 }

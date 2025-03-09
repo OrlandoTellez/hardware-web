@@ -1,0 +1,9 @@
+.button{
+    background: #0080ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px 18px;
+    border-radius: 5px;
+    gap: 10px;
+}

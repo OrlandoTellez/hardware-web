@@ -1,0 +1,9 @@
+.button{
+    color: #0080ff;
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+    border-radius: 5px;
+    border: 2px solid #0080ff;
+    gap: 10px;
+}
