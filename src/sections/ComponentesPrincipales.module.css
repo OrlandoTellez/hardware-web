@@ -23,6 +23,20 @@
     display: flex;
     overflow-x: auto;
     gap: 20px;
-    padding: 20px;
-    justify-content: center;
+    padding: 20px 5px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width: 1024px){
+    .cards_section{
+        display: flex;
+        gap: 40px;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: start;
+        width: 50%;
+    }
 }
