@@ -1,0 +1,28 @@
+.section{
+    width: 100%;
+    padding: 60px 20px;
+    background:rgb(255, 255, 255);
+    display: grid;
+    gap: 20px;
+}
+
+.article{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+
+    && h2{
+        text-align: center;
+    }
+
+    && p{
+        text-align: center;
+    }
+}
+
+.cards{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

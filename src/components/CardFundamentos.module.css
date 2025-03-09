@@ -1,0 +1,40 @@
+.card{
+    background: white;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    && div{
+        padding: 20px;
+        display: flex;
+        && p{
+            background: #e0eefb;
+            padding: 12px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.content{
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+
+    && ul{
+        display: grid;
+        gap: 10px;
+    }
+
+    && li{
+        color: #606976;
+    }
+}
+
+.button{
+    background: #e0eefb;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: #0080ff;
+    border-radius: 10px;
+}
