@@ -10,20 +10,78 @@
     z-index: 20;
 }
 
-.nav{
+.logo{
     display: grid;
     place-items: center;
-    display: none;
+    z-index: 30;
+}
+
+.nav{
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all ease 0.4s;
+
+}
+
+.nav.active{
+    transform: translate(-1200px);
+}
+
+.bars{
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    z-index: 30;
 }
 
 .ul{
     display: flex;
+    flex-direction:column;
     gap: 20px;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    margin-top: 80px;
+
+    && li{
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 1024px){
     .nav{
-        display: grid;
+        position: relative;
+        height: 100%;
+        display: flex;
+        transition: all ease 0s;
+        background:none;
+        padding: 10px;
+    }
+
+    .nav.active{
+        transform: translate(0px);
+    }
+
+    .ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 0px;
+        width: 100%;
+        padding: 0px;
+        
+        && li{
+            font-size: 1.2rem;
+        }
     }
 
     .bars{

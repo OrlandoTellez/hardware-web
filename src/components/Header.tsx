@@ -1,21 +1,29 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import Link from 'next/link'
 import bars from "@/icons/bars.svg"
 import styles from "@/components/Header.module.css"
 
 export const Header = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleMenu = () => {
+        console.log(isOpen)
+        setIsOpen(!isOpen)
+    }
   return (
     <>
         <header className={styles.header}>
-            <div>
+            <div className={styles.logo}>
                 <h1>Hardware<span>Class</span></h1>
             </div>
 
-            <div className={styles.bars}>
+            <div className={styles.bars} onClick={toggleMenu}>
                 <img src={bars.src} alt="bars" />
             </div>
 
-            <nav className={styles.nav}>
+            <nav className={`${styles.nav} ${isOpen ? styles.active : ""}`}>
                 <ul className={styles.ul}>
                     <li><Link href="/">Inicio</Link></li>
                     <li><Link href="/componentes">Componentes</Link></li>
