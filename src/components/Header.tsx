@@ -6,7 +6,7 @@ import bars from "@/icons/bars.svg"
 import styles from "@/components/Header.module.css"
 
 export const Header = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
 
     const toggleMenu = () => {
         console.log(isOpen)

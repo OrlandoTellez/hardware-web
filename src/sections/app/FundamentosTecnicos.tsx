@@ -1,6 +1,6 @@
 import React from "react";
 import { Label } from "@/components/Label";
-import styles from "@/sections/FundamentosTecnicos.module.css";
+import styles from "./FundamentosTecnicos.module.css";
 import { CardFundamentos } from "@/components/CardFundamentos";
 import { Button } from "@/components/Button";
 

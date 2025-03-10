@@ -1,8 +1,8 @@
 "use client"
 
-import { ComponentesPrincipales } from "@/sections/ComponentesPrincipales"
-import { FundamentosTecnicos } from "@/sections/FundamentosTecnicos"
-import { Hero } from "@/sections/Hero"
+import { ComponentesPrincipales } from "@/sections/app/ComponentesPrincipales"
+import { FundamentosTecnicos } from "@/sections/app/FundamentosTecnicos"
+import { Hero } from "@/sections/app/Hero"
 
 export default function Home() {
   return (
