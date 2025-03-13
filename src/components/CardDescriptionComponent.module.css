@@ -10,10 +10,10 @@
     position: relative;
     overflow: hidden; 
     border-radius: 20px;
+    display: flex;
 }
 
 .card picture img {
-    max-width: 100%;
     display: block;
     border-radius: 20px;
     object-position: center; 
@@ -33,17 +33,27 @@
     );
 }
 
-.card article {
-    display: grid;
-    gap: 10px;
+.card article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 10px 0px;
 }
     
 @media only screen and (min-width: 1024px){
-    .card{
-        width: 700px;
+    .card{        
+        display: flex;
+        gap: 20px;
+
+        && picture{
+            width: 100%;
+            overflow: inherit;
+
+            && img{
+                width: 500px;
+            }
+        }
     }
-    .card picture {
-        height: 400px;
-    }
+
+    
 }

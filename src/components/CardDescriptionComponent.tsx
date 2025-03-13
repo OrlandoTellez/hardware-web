@@ -14,7 +14,6 @@ export const CardDescriptionComponent = ({name, subtitle, src, textCard}: Props)
         <article className={styles.card}>
             <picture>
                 <img src={src} alt={name} />
-                
             </picture>
             <article>
                 <h3>{name}</h3>
