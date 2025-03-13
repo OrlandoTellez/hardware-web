@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from "./CardDescriptionComponent.module.css"
+import { Button } from './Button'
+
 
 interface Props{
     name: string
@@ -7,9 +9,10 @@ interface Props{
     src: string
     textCard: string
     icon: string
+    url: string
 }
 
-export const CardDescriptionComponent = ({name, subtitle, src, textCard, icon}: Props) => {
+export const CardDescriptionComponent = ({name, subtitle, src, textCard, icon, url}: Props) => {
   return (
     <>
         <article className={styles.card}>
@@ -22,7 +25,10 @@ export const CardDescriptionComponent = ({name, subtitle, src, textCard, icon}: 
                     {name}
                 </h3>
                 <h4>{subtitle}</h4>
-                <p>{textCard}</p>
+                <p>{textCard}</p> 
+                <div>
+                    <Button text={`Leer más acerca de ${name}`} url={url} />
+                </div>
             </article>
         </article>
     </>
