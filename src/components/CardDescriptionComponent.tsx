@@ -6,9 +6,10 @@ interface Props{
     subtitle: string
     src: string
     textCard: string
+    icon: string
 }
 
-export const CardDescriptionComponent = ({name, subtitle, src, textCard}: Props) => {
+export const CardDescriptionComponent = ({name, subtitle, src, textCard, icon}: Props) => {
   return (
     <>
         <article className={styles.card}>
@@ -16,7 +17,10 @@ export const CardDescriptionComponent = ({name, subtitle, src, textCard}: Props)
                 <img src={src} alt={name} />
             </picture>
             <article>
-                <h3>{name}</h3>
+                <h3>
+                    <img src={icon} alt={name} className={styles.icon} />
+                    {name}
+                </h3>
                 <h4>{subtitle}</h4>
                 <p>{textCard}</p>
             </article>

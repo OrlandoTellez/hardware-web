@@ -31,6 +31,7 @@
       transparent,
       rgba(0, 0, 0, 0.5)
     );
+    border-radius: 20px;
 }
 
 .card article{
@@ -38,6 +39,20 @@
     flex-direction: column;
     gap: 20px;
     padding: 10px 0px;
+
+    && h3{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+.icon{
+    background: #0080ff;
+    border-radius: 5px;
+    padding: 5px;
+
 }
     
 @media only screen and (min-width: 1024px){
