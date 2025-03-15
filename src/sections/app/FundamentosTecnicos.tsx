@@ -32,13 +32,12 @@ export const FundamentosTecnicos = () => {
         },
         {
             id: "3",
-            title: "Principios Eléctricos",
-            description: "Fundamentos de electricidad y circuitos que permiten el funcionamiento de los componentes electrónicos.",
+            title: "Procesamiento de Datos",
+            description: "La Memoria de Acceso Aleatorio (RAM) proporciona almacenamiento temporal de alta velocidad para los datos que están siendo utilizados activamente.",
             list: [
-                "Voltaje y corriente",
-                "Circuitos integrados",
-                "Señales digitales",
-                "Consumo energético"
+                "Almacenamiento de datos",
+                "Procesamiento de datos",
+                "Velocidad de acceso"
             ],
             url: "/"
         }

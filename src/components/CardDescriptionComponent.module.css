@@ -42,7 +42,7 @@
 
     && h3{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 10px;
         font-size: 1.5rem;
     }
@@ -52,7 +52,19 @@
     background: #0080ff;
     border-radius: 5px;
     padding: 5px;
+}
 
+.number{
+    color: #0080ff;
+    background: #e0eefb;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 1rem;
+}
+
+.principio{
+    display: flex;
+    flex-direction: column;
 }
     
 @media only screen and (min-width: 1024px){
