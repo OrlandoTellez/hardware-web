@@ -1,0 +1,53 @@
+.section {
+    padding: 20px;
+    margin-top: 40px;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .article {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    && h1 {
+      font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    && div {
+      color: #0080ff;
+      background: white;
+      padding: 4px 12px;
+      border-radius: 10px;
+    }
+  }
+  
+  .sub_text {
+    max-width: 70ch;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  @media only screen and (min-width: 700px){
+    .section{
+      margin-top: 0px;
+    }
+  
+    .buttons{
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
