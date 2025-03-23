@@ -9,7 +9,7 @@ interface Props {
   textCard: string;
   icon?: string;
   numberPrincipio?: string;
-  slug: string;
+  slug?: string;
 }
 
 export const CardDescriptionComponent = ({
