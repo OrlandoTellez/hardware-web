@@ -1,0 +1,16 @@
+.canva{
+    width: 70%;
+    height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+    cursor: grab;
+    background: white;
+    border-radius: 20px;
+}
+
+.canva:active{
+    cursor: grabbing;
+}
