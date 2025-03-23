@@ -1,4 +1,5 @@
 .section{
+    width: 100%;
     margin-top: 90px;
     padding: 80px;
     display: grid;
@@ -6,9 +7,11 @@
     gap: 100px;
 
     && article{
-        width: 100ch;
+        width: 100%;
+        max-width: 90ch;
         display: grid;
         gap: 20px;
+        place-content: center;
     }
 
 }
