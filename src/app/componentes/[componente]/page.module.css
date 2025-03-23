@@ -1,0 +1,32 @@
+.section{
+    margin-top: 90px;
+    padding: 80px;
+    display: grid;
+    place-items: center;
+    gap: 100px;
+
+    && article{
+        width: 100ch;
+        display: grid;
+        gap: 20px;
+    }
+
+}
+
+.boton{
+    color: #0080ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.render3d{
+    display: grid;
+    place-items: center;
+    gap: 30px;
+
+    && h3{
+        font-size: 1.7rem;
+    }
+}
