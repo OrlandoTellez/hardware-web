@@ -1,3 +1,5 @@
+'use server' 
+
 import { componentes } from "@/data/componentes"
 import Link from "next/link"
 import { notFound } from "next/navigation"
@@ -5,14 +7,22 @@ import styles from "./page.module.css"
 import { ThreeJSComponent } from "@/threejs/ThreeJSComponent"
 import arrowRight from "@/icons/arrow-right.svg"
 
-export default function ComponentPage({
-  params,
-}: {
-  params: { componente: string }
-}) {
-  const componente = componentes.find((c) => c.slug === params.componente)
+interface Params {
+  componente: string
+}
 
-  if (!componente) return notFound()
+export async function generateStaticParams() {
+  return componentes.map((c) => ({
+    componente: c.slug
+  }))
+}
+
+export default async function ComponentPage({ params }: { params: Promise<Params> }) {
+  const { componente } = await params
+  
+  const item = componentes.find((c) => c.slug === componente)
+
+  if (!item) return notFound()
 
   return (
     <>
@@ -22,19 +32,15 @@ export default function ComponentPage({
             <img src={arrowRight.src} alt="arrow right icon" />
             Volver a componentes
           </Link>        
-          <h1>{componente.name}</h1>
-          <h2>{componente.subtitle}</h2>
+          <h1>{item.name}</h1>
+          <h2>{item.subtitle}</h2>
         </article>
         <div className={styles.render3d}>
           <h3>Modelo 3D interactivo</h3>
-          <ThreeJSComponent 
-          modelo={componente.modelo}
-          />
+          <ThreeJSComponent modelo={item.modelo} />
           <p>Haz clic y arrastra para rotar. Usa la rueda del ratón para hacer zoom.</p>
         </div>
-        
       </section>
     </>
-
   )
 }
