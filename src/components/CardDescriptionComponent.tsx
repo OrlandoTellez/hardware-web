@@ -9,7 +9,7 @@ interface Props {
   textCard: string;
   icon?: string;
   numberPrincipio?: string;
-  url: string;
+  slug: string;
 }
 
 export const CardDescriptionComponent = ({
@@ -19,7 +19,7 @@ export const CardDescriptionComponent = ({
   textCard,
   icon,
   numberPrincipio,
-  url,
+  slug
 }: Props) => {
   return (
     <>
@@ -49,7 +49,7 @@ export const CardDescriptionComponent = ({
           <h4>{subtitle}</h4>
           <p>{textCard}</p>
           <div>
-            <Button text={`Leer más acerca de ${name}`} url={url} />
+          <Button text={`Leer más acerca de ${name}`} url={`/componentes/${slug}`} />
           </div>
         </article>
       </article>
