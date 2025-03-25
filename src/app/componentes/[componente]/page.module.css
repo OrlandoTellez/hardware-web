@@ -71,8 +71,12 @@
         font-size: 1rem;
       }
     
-      &&  ul,
-       ol {
+      &&  ul {
+        margin: 1em 0; 
+        padding-left: 2em; 
+      }
+
+      && ol{
         margin: 1em 0; 
         padding-left: 2em; 
       }
@@ -110,11 +114,17 @@
         
       }
     
-      &&  th, td {
+      &&  th {
         border: 1px solid #ddd;
         padding: 0.75em;
         text-align: left;
       }
+
+    && td {
+        border: 1px solid #ddd;
+        padding: 0.75em;
+        text-align: left;
+    }
     
       &&  th {
         font-weight: bold;
