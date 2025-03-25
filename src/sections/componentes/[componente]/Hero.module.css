@@ -4,7 +4,7 @@
     display: grid;
     gap: 20px;
     place-content: center;
-    padding: 80px;
+    padding-top: 80px;
 }
 
 .boton{
