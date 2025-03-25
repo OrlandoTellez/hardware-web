@@ -8,13 +8,4 @@
 
 
 
-.render3d{
-    display: grid;
-    place-items: center;
-    gap: 30px;
 
-    && h3{
-        font-size: 1.7rem;
-        text-align: center;
-    }
-}
