@@ -1,11 +1,10 @@
 'use server' 
 
 import { componentes } from "@/data/componentes"
-import Link from "next/link"
 import { notFound } from "next/navigation"
 import styles from "./page.module.css"
 import { ThreeJSComponent } from "@/threejs/ThreeJSComponent"
-import arrowRight from "@/icons/arrow-right.svg"
+import { Hero } from "@/sections/componentes/[componente]/Hero"
 
 interface Params {
   componente: string
@@ -27,14 +26,10 @@ export default async function ComponentPage({ params }: { params: Promise<Params
   return (
     <>
       <section className={styles.section}>
-        <article>
-          <Link href="/componentes" className={styles.boton}>
-            <img src={arrowRight.src} alt="arrow right icon" />
-            Volver a componentes
-          </Link>        
-          <h1>{item.name}</h1>
-          <h2>{item.subtitle}</h2>
-        </article>
+        <Hero 
+        name={item.name} 
+        subtitle={item.subtitle} 
+        />
         <div className={styles.render3d}>
           <h3>Modelo 3D interactivo</h3>
           <ThreeJSComponent modelo={item.modelo} />

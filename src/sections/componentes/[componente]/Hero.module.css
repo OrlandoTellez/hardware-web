@@ -1,0 +1,16 @@
+.hero{
+    width: 100%;
+    max-width: 90ch;
+    display: grid;
+    gap: 20px;
+    place-content: center;
+    padding: 80px;
+}
+
+.boton{
+    color: #0080ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+}
