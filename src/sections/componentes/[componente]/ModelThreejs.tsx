@@ -12,7 +12,9 @@ export const ModelThreejs = ({modelo}: Props) => {
         <div className={styles.render3d}>
           <h3>Modelo 3D interactivo</h3>
           <ThreeJSComponent modelo={modelo} />
-          <p>Haz clic y arrastra para rotar. Usa la rueda del ratón para hacer zoom.</p>
+          <article className={styles.instrucciones}>
+            <p>Haz clic y arrastra para rotar. Usa la rueda del ratón para hacer zoom.</p>
+          </article>
         </div>
     </>
   )
