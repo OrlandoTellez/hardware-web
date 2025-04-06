@@ -1,13 +1,13 @@
-"use client"
+import ComponenteClient from "./ComponenteClient"
+import type { Metadata } from "next"
 
-import { Description } from "@/sections/componentes/Description"
-import { Hero } from "@/sections/componentes/Hero"
+export const metadata: Metadata = {
+  title: "Componentes",
+  description: "Aprende sobre los componentes de hardware y su funcionamiento",
 
-export default function Home() {
-  return (
-    <>      
-      <Hero />
-      <Description />
-    </>
-  )
+  keywords: "hardware, componentes, tecnologia, computadoras",
+}
+
+export default function page() {
+  return <ComponenteClient />
 }

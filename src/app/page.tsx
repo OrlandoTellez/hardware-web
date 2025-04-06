@@ -1,15 +1,12 @@
-"use client"
+import HomeClient from "./HomeClient"
+import type { Metadata } from "next"
 
-import { ComponentesPrincipales } from "@/sections/app/ComponentesPrincipales"
-import { FundamentosTecnicos } from "@/sections/app/FundamentosTecnicos"
-import { Hero } from "@/sections/app/Hero"
+export const metadata: Metadata = {
+  title: "Inicio",
+  description: "Aprende sobre hardware y su funcionamiento",
+  keywords: "hardware, componentes, tecnologia, computadoras",
+}
 
-export default function Home() {
-  return (
-    <>      
-      <Hero />
-      <ComponentesPrincipales />
-      <FundamentosTecnicos />
-    </>
-  )
+export default function page() {
+  return <HomeClient />
 }

@@ -8,6 +8,19 @@ import { notFound } from "next/navigation"
 import styles from "./page.module.css"
 import { Hero } from "@/sections/componentes/[componente]/Hero"
 import { ModelThreejs } from "@/sections/componentes/[componente]/ModelThreejs"
+import type { Metadata } from "next"
+
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+  const item = componentes.find((c) => c.slug === params.componente)
+
+  if (!item) return {}
+
+  return {
+    title: `${item.name}`,
+    description: `Información detallada sobre el componente ${item.name}`,
+    keywords: ["hardware", item.name, "componentes", "tecnología", "computadoras"],
+  }
+}
 
 interface Params {
   componente: string
