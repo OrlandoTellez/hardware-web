@@ -4,6 +4,7 @@
     display: grid;
     gap: 20px;
     place-content: center;
+    padding-inline: 20px;
     padding-top: 80px;
 }
 
