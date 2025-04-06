@@ -22,7 +22,7 @@ export const Hero = () => {
             detrás de la tecnología moderna.
           </p>
           <section className={styles.buttons}>
-            <Button text="Explorar componentes" url="/components" />
+            <Button text="Explorar componentes" url="/componentes" />
             <SecondaryButton text="Ver principios tecnicos" url="/principios" />
           </section>
         </article>

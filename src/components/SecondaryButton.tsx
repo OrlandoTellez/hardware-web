@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "@/components/SecondaryButton.module.css"
+import Link from 'next/link'
 
 interface Props {
     text: string
@@ -9,9 +10,9 @@ interface Props {
 export const SecondaryButton = ({text, url}: Props) => {
   return (
     <>
-        <a href={url} className={styles.button}>
+        <Link href={url} className={styles.button}>
             {text}
-        </a>
+        </Link>
     </>
   )
 }

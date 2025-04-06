@@ -64,7 +64,7 @@ export const FundamentosTecnicos = () => {
         </section>
 
         <div className={styles.button}>
-          <Button text="Ver todos los principios" url="/" />
+          <Button text="Ver todos los principios" url="/principios" />
         </div>
       </section>
     </>

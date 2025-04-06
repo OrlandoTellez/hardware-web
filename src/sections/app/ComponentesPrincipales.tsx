@@ -18,7 +18,7 @@ export const ComponentesPrincipales = () => {
       src: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=800&q=80",
       textCard: "El cerebro de la computadora. Ejecuta instrucciones, realiza cálculos y coordina todas las operaciones del sistema.",
       textButton: "Aprender más sobre procesadores",
-      urlButton: "/",
+      urlButton: "/componentes/procesador",
       icon: IconCpu.src,
     },
     {
@@ -26,7 +26,7 @@ export const ComponentesPrincipales = () => {
       src: "https://images.unsplash.com/photo-1563212034-a3c52118cce2?auto=format&fit=crop&w=800&q=80",
       textCard: "Guardan datos a largo plazo, desde el sistema operativo hasta tus archivos personales. Incluye discos duros (HDD) y unidades de estado sólido (SSD).",
       textButton: "Aprender más sobre almacenamiento",
-      urlButton: "/",
+      urlButton: "/componentes/almacenamiento",
       icon: IconStorage.src
     },
     {
@@ -34,7 +34,7 @@ export const ComponentesPrincipales = () => {
       src: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
       textCard: "Almacenamiento temporal y de acceso rápido que permite al sistema acceder a los datos en uso. Más RAM significa mejor multitarea.",
       textButton: "Aprender más sobre memoria",
-      urlButton: "/",
+      urlButton: "/componentes/memoria-ram",
       icon: IconRam.src
     },
     {
@@ -42,7 +42,7 @@ export const ComponentesPrincipales = () => {
       src: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=800&q=80",
       textCard: "Sistemas responsables de mostrar imágenes, vídeos y todo contenido visual. Incluye monitores y tarjetas gráficas.",
       textButton: "Aprender más sobre gráficos",
-      urlButton: "/",
+      urlButton: "/conponentes/graficos",
       icon: IconGraphics.src
     }
   ]
