@@ -1,0 +1,11 @@
+Model Information:
+* title:	Old Computer RAM
+* source:	https://sketchfab.com/3d-models/old-computer-ram-9d3016df1c44484096c589b75a53936e
+* author:	Spark (https://sketchfab.com/muammar.yacoob)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Old Computer RAM" (https://sketchfab.com/3d-models/old-computer-ram-9d3016df1c44484096c589b75a53936e) by Spark (https://sketchfab.com/muammar.yacoob) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
