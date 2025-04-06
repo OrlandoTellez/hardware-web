@@ -1,13 +1,20 @@
 .header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
     position: fixed;
+    width: 100%;
     background: white;
     background-color: rgb(255 255 255 / 70%);
     backdrop-filter: blur(10px);
     z-index: 20;
+    display: grid;
+    place-items: center;
+}
+
+.headerContainer{
+    max-width: 1200px;    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   
 }
 
 .logo{
