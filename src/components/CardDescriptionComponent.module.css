@@ -13,12 +13,15 @@
     overflow: hidden; 
     border-radius: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card picture img {
     display: block;
     border-radius: 20px;
     object-position: center; 
+    height: 300px;
 }
 
 .card picture::after {
@@ -79,6 +82,7 @@
 
             && img{
                 width: 500px;
+                height: 100%;
             }
         }
     }
