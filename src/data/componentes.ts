@@ -36,7 +36,7 @@ export const componentes = [
     src: "https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80",
     textCard: "La Memoria de Acceso Aleatorio (RAM) proporciona almacenamiento temporal de alta velocidad para los datos que están siendo utilizados activamente. A diferencia del almacenamiento, la RAM es volátil, lo que significa que los datos se pierden cuando se apaga la computadora. Cuanta más RAM tenga un sistema, más programas y datos podrá manejar simultáneamente sin ralentizarse. La RAM es esencial para el multitasking eficiente.",
     icon: IconRam.src,
-    modelo: "MEMORY-RAM-MODELS/videogame-ram/scene.glb",
+    modelo: "MEMORY-RAM-MODELS/-memory-ram/scene.gltf",
     details: {
       description: "La memoria RAM permite el acceso rápido a los datos que están en uso en el sistema, mejorando el rendimiento general.",
       specs: ["Capacidad", "Frecuencia", "Tipo (DDR3, DDR4, DDR5)"]
