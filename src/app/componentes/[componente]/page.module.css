@@ -1,140 +1,132 @@
-.section{
-    width: 100%;
-    margin-top: 90px;
-    display: grid;
-    place-items: center;
-    gap: 100px;
+.section {
+  width: 100%;
+  margin-top: 90px;
+  display: grid;
+  place-items: center;
+  gap: 100px;
 }
 
-.description{
-    width: 100%;
+.description {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  color: #000000;
+
+  && article {
+    max-width: 90ch;
     display: grid;
     place-items: center;
     gap: 20px;
-    background-color: #ffffff;
-    padding: 20px;
+    padding-top: 60px;
+  }
+
+  && p {
+    font-size: 14px;
     color: #000000;
+  }
 
-    && article {
-        max-width: 90ch;
-        display: grid;
-        place-items: center;
-        gap: 20px;
-        padding-top: 60px;
-    }
-    
-      && p {
-        font-size: 14px;
-        color: #000000;
-      }
-    
-      && a {
-        text-decoration: none;
-      }
-    
-      && li {
-        list-style: none;
-      }
-    
-    
-      && h1 {
-        font-size: 2.5rem;
-        border-bottom: 2px solid #ddd; 
-        padding-bottom: 0.3em;
-      }
-    
-      && h2 {
-        font-size: 2rem;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 0.2em;
-      }
-    
-      &&  h3 {
-        font-size: 1.75rem;
-      }
-    
-      &&  h4 {
-        font-size: 1.5rem;
-      }
-    
-      && h5 {
-        font-size: 1.25rem;
-      }
-    
-      && h6 {
-        font-size: 1rem;
-      }
-    
-    
-      && p {
-        margin: 1em 0; 
-        font-size: 1rem;
-      }
-    
-      &&  ul {
-        margin: 1em 0; 
-        padding-left: 2em; 
-      }
+  && a {
+    text-decoration: none;
+  }
 
-      && ol{
-        margin: 1em 0; 
-        padding-left: 2em; 
-      }
-    
-      && li {
-        margin-bottom: 0.5em; 
-      }
-    
-      &&  a {
-        color: #0070f3; 
-        text-decoration: underline;
-        
-      }
-    
-      && a:hover {
-        color: #0056b3; 
-        text-decoration: none;
-      }
-    
-      && blockquote {
-        border-left: 4px solid #ddd;
-        padding-left: 1em;
-        margin: 1em 0;
-        font-style: italic;
-        color: #ffffff;
-      }
-    
-      &&  table {
-        width: 100%;
-        border-collapse: collapse; 
-        margin: 1.5em 0;
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        
-      }
-    
-      &&  th {
-        border: 1px solid #ddd;
-        padding: 0.75em;
-        text-align: left;
-      }
+  && li {
+    list-style: none;
+  }
 
-    && td {
-        border: 1px solid #ddd;
-        padding: 0.75em;
-        text-align: left;
-    }
-    
-      &&  th {
-        font-weight: bold;
-      }
-    
-      &&  hr {
-        border: none;
-        border-top: 1px solid #ddd;
-        margin: 2em 0;
-      }
+  && h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3em;
+  }
+
+  && h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.2em;
+  }
+
+  && h3 {
+    font-size: 1.75rem;
+  }
+
+  && h4 {
+    font-size: 1.5rem;
+  }
+
+  && h5 {
+    font-size: 1.25rem;
+  }
+
+  && h6 {
+    font-size: 1rem;
+  }
+
+  && p {
+    margin: 1em 0;
+    font-size: 1rem;
+  }
+
+  && ul {
+    margin: 1em 0;
+    padding-left: 2em;
+  }
+
+  && ol {
+    margin: 1em 0;
+    padding-left: 2em;
+  }
+
+  && li {
+    margin-bottom: 0.5em;
+  }
+
+  && a {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+
+  && a:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+
+  && blockquote {
+    border-left: 4px solid #ddd;
+    padding-left: 1em;
+    margin: 1em 0;
+    font-style: italic;
+    color: #ffffff;
+  }
+
+  && table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+
+  && th {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: left;
+  }
+
+  && td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: left;
+  }
+
+  && th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+
+  && hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em 0;
+  }
 }
-
-

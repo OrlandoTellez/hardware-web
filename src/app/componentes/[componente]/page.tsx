@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { remark } from "remark"
+import remarkGfm from "remark-gfm"
 import html from "remark-html"
 import { componentes } from "@/data/componentes"
 import { notFound } from "next/navigation"
@@ -19,7 +20,7 @@ async function getMarkdownContent(slug: string) {
     const fileContent = fs.readFileSync(filePath, "utf8")
 
     const { content } = matter(fileContent)
-    const processedContent = await remark().use(html).process(content)
+    const processedContent = await remark().use(remarkGfm).use(html).process(content)
 
     return processedContent.toString()
   } catch (error) {
@@ -50,7 +51,10 @@ export default async function ComponentPage({ params }: { params: Promise<Params
 
         <article className={styles.description}>
           <article>
-            <div dangerouslySetInnerHTML={{ __html: markdownContent }} />
+            <div 
+            className="markdown"
+            dangerouslySetInnerHTML={{ __html: markdownContent }} 
+            />
           </article>
         </article>
       </section>
