@@ -1,32 +1,12 @@
-import fs from "fs"
-import path from "path"
-import matter from "gray-matter"
-import { remark } from "remark"
-import remarkGfm from "remark-gfm"
-import html from "remark-html"
 import { componentes } from "@/data/componentes"
 import { notFound } from "next/navigation"
 import styles from "./page.module.css"
 import { Hero } from "@/sections/componentes/[componente]/Hero"
 import { ModelThreejs } from "@/sections/componentes/[componente]/ModelThreejs"
+import { getMarkdownContent } from "@/utils/getMarkdownContent"
 
 interface Params {
   componente: string
-}
-
-async function getMarkdownContent(slug: string) {
-  try {
-    const filePath = path.resolve(process.cwd(), "src", "content", `${slug}.md`)
-    const fileContent = fs.readFileSync(filePath, "utf8")
-
-    const { content } = matter(fileContent)
-    const processedContent = await remark().use(remarkGfm).use(html).process(content)
-
-    return processedContent.toString()
-  } catch (error) {
-    console.error(`Error loading Markdown file for ${slug}:`, error)
-    return "<p>Contenido no disponible.</p>"
-  }
 }
 
 export async function generateStaticParams() {
@@ -41,7 +21,7 @@ export default async function ComponentPage({ params }: { params: Promise<Params
 
   if (!item) return notFound()
 
-  const markdownContent = await getMarkdownContent(componente)
+  const markdownContent = await getMarkdownContent("componentes", componente)
 
   return (
     <>
