@@ -1,5 +1,5 @@
 import { Description } from '@/sections/principios/Description'
-import { Hero } from '@/sections/principios/Hero'
+import { HeroPrincipios } from '@/sections/principios/HeroPrincipios'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function page(){
   return (
     <>
-        <Hero />
+        <HeroPrincipios />
         <Description />
     </>
   )
