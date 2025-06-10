@@ -16,7 +16,7 @@
   color: #000000;
 
   && article {
-    max-width: 90ch;
+    max-width: 75ch;
     display: grid;
     place-items: center;
     gap: 20px;
