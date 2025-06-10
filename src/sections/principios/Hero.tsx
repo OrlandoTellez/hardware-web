@@ -6,7 +6,7 @@ export const Hero = () => {
     <>
       <section className={styles.section}>
         <article className={styles.article}>
-          <h1>
+          <h1 className={styles.title}>
             Principios Técnicos
           </h1>
           <p className={styles.sub_text}>

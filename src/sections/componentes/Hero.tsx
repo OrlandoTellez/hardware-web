@@ -6,13 +6,11 @@ export const Hero = () => {
     <>
       <section className={styles.section}>
         <article className={styles.article}>
-          <h1>
+          <h1 className={styles.title}>
             Componentes del Hardware
           </h1>
           <p className={styles.sub_text}>
-            Una plataforma educativa donde aprenderás todo sobre los componentes
-            de una computadora, su funcionamiento y los principios técnicos
-            detrás de la tecnología moderna.
+            Descubra los componentes esenciales del hardware de un ordenador, desde la CPU hasta la memoria RAM, y cómo cada uno contribuye al funcionamiento del sistema.
           </p>
         </article>
       </section>

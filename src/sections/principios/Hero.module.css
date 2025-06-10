@@ -6,19 +6,20 @@
     display: grid;
     place-items: center;
   }
+
+  .title{
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
   
   .article {
     width: 100%;
     display: grid;
     place-items: center;
     gap: 20px;
-    && h1 {
-      font-size: 3rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
   
     && div {
       color: #0080ff;
@@ -30,7 +31,7 @@
   
   .sub_text {
     max-width: 70ch;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center;
   }
   
@@ -51,4 +52,13 @@
       flex-direction: row;
       justify-content: center;
     }
+    .title{
+        font-size: 3rem;
+    }
+
+    .sub_text {
+    max-width: 70ch;
+    font-size: 1.4rem;
+    text-align: center;
+  }
   }
