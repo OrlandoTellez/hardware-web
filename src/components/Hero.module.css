@@ -44,9 +44,9 @@
   
   @media only screen and (min-width: 700px){
     .section{
-      margin-top: 0px;
-      height: 100vh;
-
+      margin-top: 160px;
+      margin-bottom: 100px;
+      height: initial;
     }
   
     .buttons{

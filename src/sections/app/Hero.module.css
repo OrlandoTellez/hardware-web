@@ -1,7 +1,7 @@
 .section {
   padding: 20px;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   margin-top: 40px;
   display: grid;
   place-items: center;
@@ -43,8 +43,9 @@
 
 @media only screen and (min-width: 700px){
   .section{
-    margin-top: 0px;
-    height: 100vh;
+    height: initial;
+    margin-top: 130px;
+    margin-bottom: 100px;
   }
 
   .buttons{
